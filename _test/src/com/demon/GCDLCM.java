@@ -45,6 +45,7 @@ public class GCDLCM {
     	System.out.print("测试本地修改2");
     	System.out.print("测试本地修改3");
         System.out.print("客户端修改");
+  System.out.print("客户端修改2");
         Scanner input = new Scanner(System.in);
         System.out.print("请输入第一个整数：");
         int n1 = input.nextInt();
