@@ -5,10 +5,10 @@ package com.demon;
 import java.util.Scanner;
 
 public class GCDLCM {
-    // ×î´ó¹«Ô¼Êı
+    // éˆï¿½æ¾¶Ñƒå•ç»¾ï¸½æšŸ
     public static int get_gcd(int n1, int n2) {
         int gcd = 0;
-        if (n1 < n2) {// ½»»»n1¡¢n2µÄÖµ
+        if (n1 < n2) {// æµœã‚†å´²n1éŠ†ä¹¶2é¨å‹«ï¿½ï¿½
             n1 = n1 + n2;
             n2 = n1 - n2;
             n1 = n1 - n2;
@@ -35,17 +35,18 @@ public class GCDLCM {
 
     }
 
-    // ×îĞ¡¹«±¶Êı
+    // éˆï¿½çå¿“å•éŠå¶†æšŸ
     public static int get_lcm(int n1, int n2) {
         return n1 * n2 / get_gcd(n1, n2);
     }
 
     public static void main(String[] args) {
-    	System.out.print("²âÊÔ±¾µØĞŞ¸Ä ");
+    	System.out.print("æµ‹è¯•æœ¬åœ°ä¿®æ”¹ ");
+        System.out.print("å¨´å¬­ç˜¯");
         Scanner input = new Scanner(System.in);
-        System.out.print("ÇëÊäÈëµÚÒ»¸öÕûÊı£º");
+        System.out.print("ç’‡ç–¯ç·­éãƒ§îƒ‡æ¶“ï¿½æ¶“î…æš£éå¸®ç´°");
         int n1 = input.nextInt();
-        System.out.print("ÇëÊäÈëµÚ¶ş¸öÕûÊı£º");
+        System.out.print("ç’‡ç–¯ç·­éãƒ§îƒ‡æµœå±¼é‡œéå­˜æšŸé”›ï¿½");
         int n2 = input.nextInt();
         System.out.println("(" + n1 + "," + n2 + ")" + "=" + get_gcd(n1, n2));
         System.out.println("[" + n1 + "," + n2 + "]" + "=" + get_lcm(n1, n2));
