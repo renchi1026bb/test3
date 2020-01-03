@@ -42,6 +42,7 @@ public class GCDLCM {
 
     public static void main(String[] args) {
     	System.out.print("主分支代码");
+    	System.out.print("本地分值测试1");
     	System.out.print("测试本地修改1");
     	System.out.print("测试本地修改2");
     	System.out.print("测试本地修改3");
