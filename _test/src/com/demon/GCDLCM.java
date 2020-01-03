@@ -5,10 +5,10 @@ package com.demon;
 import java.util.Scanner;
 
 public class GCDLCM {
-    // ×î´ó¹«Ô¼Êý
+    // æœ€å¤§å…¬çº¦æ•°
     public static int get_gcd(int n1, int n2) {
         int gcd = 0;
-        if (n1 < n2) {// ½»»»n1¡¢n2µÄÖµ
+        if (n1 < n2) {// äº¤æ¢n1ã€n2çš„å€¼
             n1 = n1 + n2;
             n2 = n1 - n2;
             n1 = n1 - n2;
@@ -35,16 +35,17 @@ public class GCDLCM {
 
     }
 
-    // ×îÐ¡¹«±¶Êý
+    // æœ€å°å…¬å€æ•°
     public static int get_lcm(int n1, int n2) {
         return n1 * n2 / get_gcd(n1, n2);
     }
 
     public static void main(String[] args) {
+        System.out.print("æµ‹è¯•");
         Scanner input = new Scanner(System.in);
-        System.out.print("ÇëÊäÈëµÚÒ»¸öÕûÊý£º");
+        System.out.print("è¯·è¾“å…¥ç¬¬ä¸€ä¸ªæ•´æ•°ï¼š");
         int n1 = input.nextInt();
-        System.out.print("ÇëÊäÈëµÚ¶þ¸öÕûÊý£º");
+        System.out.print("è¯·è¾“å…¥ç¬¬äºŒä¸ªæ•´æ•°ï¼š");
         int n2 = input.nextInt();
         System.out.println("(" + n1 + "," + n2 + ")" + "=" + get_gcd(n1, n2));
         System.out.println("[" + n1 + "," + n2 + "]" + "=" + get_lcm(n1, n2));
