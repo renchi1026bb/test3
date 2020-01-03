@@ -43,6 +43,8 @@ public class GCDLCM {
     public static void main(String[] args) {
     	System.out.print("测试本地修改1");
     	System.out.print("测试本地修改2");
+    	System.out.print("测试本地修改3");
+        System.out.print("客户端修改");
         Scanner input = new Scanner(System.in);
         System.out.print("请输入第一个整数：");
         int n1 = input.nextInt();
